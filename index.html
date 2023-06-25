@@ -10,6 +10,9 @@
     <!-- add the main css file  -->
     <link rel="stylesheet" href="main.css">
 
+    <!-- add the modal css  -->
+    <link rel="stylesheet" href="modal.css">
+
     <!-- the poppins font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +22,7 @@
 
 <body>
     <!-- the title and search input field section  -->
-    <section class="stick-top">
+    <section class="stick-top page-header">
         <div class="row">
             <!-- the app title  -->
             <div class="column">
@@ -29,7 +32,8 @@
             </div>
             <!-- the app search bar  -->
             <div class="column" style="position: absolute; right: 0px; top: 2rem;">
-                <input type="text" class="search-field" id="searchInput" placeholder="City or State" style="outline: none;">
+                <input type="text" class="search-field" id="searchInput" placeholder="City or State"
+                    style="outline: none;">
             </div>
         </div>
     </section>
@@ -49,8 +53,19 @@
         </table>
     </section>
 
-<!-- load scripts  -->
-<script src="search-cities.js"></script>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalCityName"></h3>
+            <p id="modalStateName"></p>
+            <p id="modalPopulation"></p>
+            <p id="modalGrowth"></p>
+        </div>
+    </div>
+
+    <!-- load scripts  -->
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -28,6 +28,12 @@ body {
     top: 0;
 }
 
+.page-header {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
 .search-field {
     padding: 14px 8px;
     width: 23rem;
@@ -87,3 +93,9 @@ tr:hover {
 .negative {
     color: red;
 }
+
+/* highlight the query  */
+.highlight {
+    background-color: yellow;
+  }
+  
