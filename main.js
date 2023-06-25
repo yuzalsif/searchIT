@@ -1,4 +1,4 @@
-// get the html contents 
+// get the html elements 
 const searchInput = document.getElementById('searchInput');
 const resultsTable = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
 const modal = document.getElementById('myModal');
@@ -33,9 +33,6 @@ fetch('https://tinyurl.com/5bzzvh6u')
                 const populationCell = row.insertCell();
                 const growthCell = row.insertCell();
 
-                // const cityLink = document.createElement('a');
-                // cityLink.textContent = city.city;
-                // cityCell.appendChild(cityLink);
                 cityCell.textContent = city.city
                 stateCell.textContent = city.state;
                 populationCell.textContent = city.population;
