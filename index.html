@@ -29,14 +29,14 @@
             </div>
             <!-- the app search bar  -->
             <div class="column" style="position: absolute; right: 0px; top: 2rem;">
-                <input type="text" class="search-field" placeholder="City or State" style="outline: none;">
+                <input type="text" class="search-field" id="searchInput" placeholder="City or State" style="outline: none;">
             </div>
         </div>
     </section>
 
     <!-- the result section starts here  -->
     <section style="margin-top: 6rem;">
-        <table>
+        <table id="resultsTable">
             <thead>
                 <tr>
                     <th>City</th>
@@ -45,30 +45,12 @@
                     <th>Growth %</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>New York City</td>
-                    <td>New York</td>
-                    <td>8,398,748</td>
-                    <td class="positive">2.35%</td>
-                </tr>
-                <tr>
-                    <td>Los Angeles</td>
-                    <td>California</td>
-                    <td>3,990,456</td>
-                    <td class="negative">-0.21%</td>
-                </tr>
-                <tr>
-                    <td>Chicago</td>
-                    <td>Illinois</td>
-                    <td>2,705,994</td>
-                    <td class="positive">1.92%</td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
-
     </section>
 
+<!-- load scripts  -->
+<script src="search-cities.js"></script>
 </body>
 
 </html>

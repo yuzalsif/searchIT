@@ -76,6 +76,10 @@ th {
     font-size: medium;
 }
 
+tr:hover {
+    background-color: rgba(43, 39, 48, 0.08);
+}
+
 .positive {
     color: green;
 }
