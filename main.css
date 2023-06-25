@@ -21,6 +21,7 @@ body {
     padding-right: 12rem;
 }
 
+/* make the header stick at the top  */
 .stick-top {
     position: -webkit-sticky;
     position: sticky;
@@ -35,7 +36,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.search-field:hover{
+.search-field:hover {
     padding: 14px 8px;
     width: 23rem;
     border-radius: 4px;
@@ -43,11 +44,42 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.search-field:focus{
+.search-field:focus {
     padding: 14px 8px;
     width: 23rem;
     border-radius: 4px;
     border: 0.8px solid rgba(43, 39, 48, 0.5);
     font-family: 'Poppins', sans-serif;
     color: rgba(43, 39, 48, 1);
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 0.7px solid rgba(43, 39, 48, 0.2);
+    font-family: 'Poppins', sans-serif;
+    color: #2B2730;
+}
+
+td {
+    font-size: small;
+}
+
+th {
+    font-size: medium;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
 }

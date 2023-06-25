@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SearchIT</title>
+
+    <!-- add the main css file  -->
     <link rel="stylesheet" href="main.css">
 
     <!-- the poppins font  -->
@@ -30,6 +32,41 @@
                 <input type="text" class="search-field" placeholder="City or State" style="outline: none;">
             </div>
         </div>
+    </section>
+
+    <!-- the result section starts here  -->
+    <section style="margin-top: 6rem;">
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Population</th>
+                    <th>Growth %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>New York City</td>
+                    <td>New York</td>
+                    <td>8,398,748</td>
+                    <td class="positive">2.35%</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                    <td>California</td>
+                    <td>3,990,456</td>
+                    <td class="negative">-0.21%</td>
+                </tr>
+                <tr>
+                    <td>Chicago</td>
+                    <td>Illinois</td>
+                    <td>2,705,994</td>
+                    <td class="positive">1.92%</td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
 
 </body>
